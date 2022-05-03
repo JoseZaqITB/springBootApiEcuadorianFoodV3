@@ -16,7 +16,7 @@ public class ServeiUsuari {
 
     private final RepositoriUsuari repositoriUsuari;
 
-    private final PasswordEncoder xifrat;
+//    private final PasswordEncoder xifrat;
 
     public Usuari consultarPerUsername(String username) {
         return repositoriUsuari.findByUsername(username).orElse(null);
@@ -25,7 +25,7 @@ public class ServeiUsuari {
     public Usuari crearNouUsuari(Usuari nouUsuari) {
         //falta controlar que els 2 passwords del client coincideixen
         //passar un UsuariCreacioDTO
-        nouUsuari.setPassword(xifrat.encode(nouUsuari.getPassword()));
+//        nouUsuari.setPassword(xifrat.encode(nouUsuari.getPassword()));
         repositoriUsuari.save(nouUsuari);
         return nouUsuari;
     }
