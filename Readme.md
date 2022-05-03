@@ -12,3 +12,6 @@ Te devolverá un json con un token.
 Colocar el endpoint en el Header de la peticion al realiar un GET en un endpoint
 ![food endpoint request with a token](/home/sjo/IdeaProjects/springBootApiEcuadorianFoodV2/src/main/resources/images/food.png)
   
+## V3: oauth2 con github
+https://spring.io/guides/tutorials/spring-boot-oauth2/
+https://www.youtube.com/watch?v=oRolZljP7kc
